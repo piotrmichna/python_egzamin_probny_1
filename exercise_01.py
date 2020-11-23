@@ -1,4 +1,10 @@
 def shorten(txt):
+    """Creates an shorten from eny text.
+
+    :param str: eny text
+    :rtype: str
+    :return: shortened
+    """
     sh_str = str(txt)
     words = sh_str.split(' ')
     sh_str = ""
@@ -9,11 +15,12 @@ def shorten(txt):
     return sh_str
 
 
-shortened = shorten("Don't repeat yourself")
-print(shortened)
+if __name__ == '__main__':
+    shortened = shorten("Don't repeat yourself")
+    print(shortened)
 
-shortened = shorten("Read the fine manual")
-print(shortened)
+    shortened = shorten("Read the fine manual")
+    print(shortened)
 
-shortened = shorten("All terrain armoured transport")
-print(shortened)
+    shortened = shorten("All terrain armoured transport")
+    print(shortened)
